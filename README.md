@@ -24,3 +24,6 @@ Further objects of Google APIs would be read into DataSet majorly with respect t
 
 ## We ❤️ Contributors Like You!
 We’re eager to work with you, our user community, to improve these materials and develop new ones. Please check out [CLASSROOM API guide](https://developers.google.com/classroom) for more information on getting started.
+
+## License
+GCR-SyncData is distributed under the MIT license.
