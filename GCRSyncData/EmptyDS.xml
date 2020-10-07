@@ -1,0 +1,104 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="GCRData" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="GCRData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GCR_Courses">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RecId" type="xs:int" minOccurs="0" />
+              <xs:element name="CourseId" type="xs:string" minOccurs="0" />
+              <xs:element name="CourseName" type="xs:string" minOccurs="0" />
+              <xs:element name="Section" type="xs:string" minOccurs="0" />
+              <xs:element name="Room" type="xs:string" minOccurs="0" />
+              <xs:element name="CourseDescHeading" type="xs:string" minOccurs="0" />
+              <xs:element name="CourseDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="OwnerId" type="xs:string" minOccurs="0" />
+              <xs:element name="AlternateLink" type="xs:string" minOccurs="0" />
+              <xs:element name="EnrollmentCode" type="xs:string" minOccurs="0" />
+              <xs:element name="CourseState" type="xs:string" minOccurs="0" />
+              <xs:element name="CalendarId" type="xs:string" minOccurs="0" />
+              <xs:element name="CourseGroupEmail" type="xs:string" minOccurs="0" />
+              <xs:element name="TeacherGroupEmail" type="xs:string" minOccurs="0" />
+              <xs:element name="TeacherFolder" type="xs:string" minOccurs="0" />
+              <xs:element name="CourseMaterialSets" type="xs:string" minOccurs="0" />
+              <xs:element name="CourseETags" type="xs:string" minOccurs="0" />
+              <xs:element name="CourseCreationTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CourseUpdateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TeacherCount" type="xs:string" minOccurs="0" />
+              <xs:element name="StudentCount" type="xs:string" minOccurs="0" />
+              <xs:element name="InviteCount" type="xs:string" minOccurs="0" />
+              <xs:element name="AnnouncementCount" type="xs:string" minOccurs="0" />
+              <xs:element name="TopicCount" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedOn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ModifiedOn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GCR_People">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RecId" type="xs:int" minOccurs="0" />
+              <xs:element name="CourseId" type="xs:string" minOccurs="0" />
+              <xs:element name="UserState" type="xs:string" minOccurs="0" />
+              <xs:element name="Role" type="xs:string" minOccurs="0" />
+              <xs:element name="UserId" type="xs:string" minOccurs="0" />
+              <xs:element name="PeopleETag" type="xs:string" minOccurs="0" />
+              <xs:element name="StudentWorkFolder" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedOn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ModifiedOn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GCR_UserProfiles">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RecId" type="xs:int" minOccurs="0" />
+              <xs:element name="UserId" type="xs:string" minOccurs="0" />
+              <xs:element name="EmailAddress" type="xs:string" minOccurs="0" />
+              <xs:element name="GivenName" type="xs:string" minOccurs="0" />
+              <xs:element name="FamilyName" type="xs:string" minOccurs="0" />
+              <xs:element name="FullName" type="xs:string" minOccurs="0" />
+              <xs:element name="ProfileETag" type="xs:string" minOccurs="0" />
+              <xs:element name="NameETag" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedOn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ModifiedOn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GCR_Announcements">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RecId" type="xs:int" minOccurs="0" />
+              <xs:element name="AnnId" type="xs:string" minOccurs="0" />
+              <xs:element name="CourseId" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatorUserId" type="xs:string" minOccurs="0" />
+              <xs:element name="AssigneeMode" type="xs:string" minOccurs="0" />
+              <xs:element name="AnnText" type="xs:string" minOccurs="0" />
+              <xs:element name="AnnState" type="xs:string" minOccurs="0" />
+              <xs:element name="AnnScheduledTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AnnCreationTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AnnUpdateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CreatedOn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ModifiedOn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GCR_Topics">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RecId" type="xs:int" minOccurs="0" />
+              <xs:element name="TopicId" type="xs:string" minOccurs="0" />
+              <xs:element name="CourseId" type="xs:string" minOccurs="0" />
+              <xs:element name="TopicName" type="xs:string" minOccurs="0" />
+              <xs:element name="TopicETag" type="xs:string" minOccurs="0" />
+              <xs:element name="TopicUpdateTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CreatedOn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ModifiedOn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
